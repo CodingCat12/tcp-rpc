@@ -1,0 +1,19 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+async-trait = "0.1.88"
+bincode = "2.0.1"
+bytes = "1.10.1"
+futures = "0.3.31"
+thiserror = "2.0.12"
+tokio = { version = "1.45.1", features = ["full"] }
+tokio-util = { version = "0.7.15", features = ["codec"] }
+tracing = "0.1.41"
+tracing-appender = "0.2.3"
+tracing-subscriber = { version = "0.3.19", features = ["fmt", "env-filter", "json"] }
+macros = { path = "../macros" }
+protocol = { path = "../protocol" }
+serde = { version = "1.0.219", features = ["derive"] }

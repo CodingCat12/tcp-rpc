@@ -1,0 +1,5 @@
+{"timestamp":"2025-05-30T16:09:38.377497Z","level":"INFO","fields":{"message":"Received shutdown signal, shutting down gracefully..."},"target":"server"}
+{"timestamp":"2025-05-30T16:09:38.377831Z","level":"INFO","fields":{"message":"Shutting down server..."},"target":"server"}
+{"timestamp":"2025-05-30T16:09:41.494672Z","level":"INFO","fields":{"message":"started server","addr":"127.0.0.1:8080"},"target":"server"}
+{"timestamp":"2025-05-30T16:09:42.261639Z","level":"INFO","fields":{"message":"Received shutdown signal, shutting down gracefully..."},"target":"server"}
+{"timestamp":"2025-05-30T16:09:42.261949Z","level":"INFO","fields":{"message":"Shutting down server..."},"target":"server"}
