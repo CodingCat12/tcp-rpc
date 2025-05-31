@@ -90,7 +90,7 @@ pub fn request(attr: TokenStream, item: TokenStream) -> TokenStream {
         }
 
         #[async_trait::async_trait]
-        impl Request for #struct_name {
+        impl ::protocol::Request for #struct_name {
             type Resp = #return_type;
 
             async fn handle(self) -> Self::Resp {
@@ -166,10 +166,10 @@ pub fn rpc(attr: TokenStream, item: TokenStream) -> TokenStream {
             #(#response_variants),*
         }
 
-        impl Response for #response_name {}
+        impl ::protocol::Response for #response_name {}
 
         #[async_trait::async_trait]
-        impl Request for #enum_name {
+        impl ::protocol::Request for #enum_name {
             type Resp = #response_name;
 
             async fn handle(self) -> Self::Resp {

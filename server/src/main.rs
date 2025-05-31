@@ -1,4 +1,4 @@
-use protocol::{Request, Response};
+use protocol::Request;
 
 use futures::{SinkExt, StreamExt};
 use macros::{request, rpc};
