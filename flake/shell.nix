@@ -19,6 +19,7 @@
             "rust-src"
             "rustfmt"
           ])
+          lldb
         ];
         buildInputs = [openssl];
 
