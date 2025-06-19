@@ -149,10 +149,9 @@ pub async fn handle_connection<Req: Request>(
                             error!(%e, "failed to handle request");
                         })?;
 
-                        framed.send(Bytes::from(resp_bytes)).await.map_err(|e| {
+                        framed.send(Bytes::from(resp_bytes)).await.inspect_err(|e| {
                             error!(%e, "failed to send response");
-                            Error::Io(e)
-                        })?;
+                        }).map_err(Error::Io)?;
                     }
                     None => { break; }
                 }
@@ -165,6 +164,15 @@ pub async fn handle_connection<Req: Request>(
             }
         }
     }
+
+    framed
+        .get_mut()
+        .shutdown()
+        .await
+        .inspect_err(|e| {
+            error!(%e, "error shutting down socket");
+        })
+        .map_err(Error::Io)?;
 
     framed.get_mut().shutdown().await.map_err(|e| {
         error!(%e, "error shutting down socket");
