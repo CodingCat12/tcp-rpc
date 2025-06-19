@@ -1,9 +1,0 @@
-{"timestamp":"2025-05-30T15:35:06.702902Z","level":"INFO","fields":{"message":"started server","addr":"127.0.0.1:8080"},"target":"server"}
-{"timestamp":"2025-05-30T15:35:10.372985Z","level":"INFO","fields":{"message":"Received shutdown signal, shutting down gracefully..."},"target":"server"}
-{"timestamp":"2025-05-30T15:35:10.373278Z","level":"INFO","fields":{"message":"Shutting down server..."},"target":"server"}
-{"timestamp":"2025-05-30T15:39:02.251220Z","level":"INFO","fields":{"message":"started server","addr":"127.0.0.1:8080"},"target":"server"}
-{"timestamp":"2025-05-30T15:39:13.055904Z","level":"INFO","fields":{"message":"Received shutdown signal, shutting down gracefully..."},"target":"server"}
-{"timestamp":"2025-05-30T15:39:13.056026Z","level":"INFO","fields":{"message":"Shutting down server..."},"target":"server"}
-{"timestamp":"2025-05-30T15:40:13.701384Z","level":"INFO","fields":{"message":"started server","addr":"127.0.0.1:8080"},"target":"server"}
-{"timestamp":"2025-05-30T15:40:21.652856Z","level":"INFO","fields":{"message":"connection opened"},"target":"server","span":{"connection_id":"1","peer_addr":"127.0.0.1:39380","name":"connection"},"spans":[{"connection_id":"1","peer_addr":"127.0.0.1:39380","name":"connection"}]}
-{"timestamp":"2025-05-30T15:40:52.677685Z","level":"INFO","fields":{"message":"connection closed"},"target":"server"}
